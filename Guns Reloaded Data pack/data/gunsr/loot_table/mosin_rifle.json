@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:command",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:player_head",
+          "functions": [
+            {
+              "function": "minecraft:fill_player_head",
+              "entity": "this"
+            },
+            {
+              "function": "set_item",
+              "item": "command_block_minecart"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "item_model":"mosin_rifle",
+                "minecraft:swing_animation": {
+                  "type": "none"
+                },
+                "minecraft:piercing_weapon": {},
+                "enchantments":{
+                  "gunsr:mosin_rifle_lc":1
+                },
+                "enchantment_glint_override":false,
+                "minecraft:tooltip_display": {
+                  "hidden_components": [
+                    "minecraft:profile"
+                  ]
+                },
+                "minecraft:custom_name": {
+                  "text": "Mosin Rifle",
+                  "color": "white",
+                  "italic": false
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "A Semi Auto Rifle used in WW2.",
+                    "color": "gray",
+                    "italic": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

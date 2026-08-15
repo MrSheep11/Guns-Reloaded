@@ -1,0 +1,1 @@
+function gunsr:main/api/bullet_api/fire with storage gunsr:gun_definitions values.bullet_api

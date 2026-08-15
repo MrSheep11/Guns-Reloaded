@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "A datapack that adds guns and other military weapons to modern versions of Minecraft",
+    "min_format": [
+      107,
+      1
+    ],
+    "max_format": 107
+  }
+}
