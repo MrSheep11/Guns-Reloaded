@@ -1,1 +1,1 @@
-data modify storage gunsr:gun_definitions values set value {bullet_api:{blocks_per_tick:1, damage:7, breaks_blocks:true, fire_power:0.3, bullet_spawn_coord:1}}
+data modify storage gunsr:gun_definitions mosin_rifle set value {bullet_api:{blocks_per_tick:1, damage:7, breaks_blocks:true, fire_power:0.3, bullet_spawn_coord:1}}
