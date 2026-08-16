@@ -1,0 +1,31 @@
+{
+  "anvil_cost": 0,
+  "description": {
+    "translate": "enchantment.example.left_click_detect",
+    "fallback": "Left Click Detection"
+  },
+  "max_cost": {
+    "base": 65,
+    "per_level_above_first": 9
+  },
+  "max_level": 1,
+  "min_cost": {
+    "base": 15,
+    "per_level_above_first": 9
+  },
+  "slots": [
+    "any"
+  ],
+  "supported_items": ["minecraft:player_head", "minecraft:command_block_minecart"],
+  "weight": 2,
+  "effects": {
+    "minecraft:post_piercing_attack": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "gunsr:main/guns/pistol/glock_17"
+        }
+      }
+    ]
+  }
+}
