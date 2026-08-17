@@ -1,5 +1,6 @@
 # Draw one tracer point and stop immediately if this substep entered a block.
-#######particle minecraft:smoke ~ ~ ~ 0 0 0 0 1 force @a
+particle minecraft:ash ~ ~ ~ 0 0 0 0 1 force @a
+execute if block ~ ~ ~ #gunsr:penetrable_glass if score @s gunsr.fire matches 1.. run function gunsr:main/api/bullet_api/internal/penetrate_glass
 execute unless block ~ ~ ~ #gunsr:bullet_pass_through run return run function gunsr:main/api/bullet_api/internal/on_block_hit
 
 # Use a small AABB so entity hitboxes are detected instead of only their feet

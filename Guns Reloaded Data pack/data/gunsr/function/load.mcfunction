@@ -17,6 +17,7 @@ scoreboard objectives add gunsr.yaw dummy
 scoreboard objectives add gunsr.hole_age dummy
 scoreboard objectives add gunsr.hole_size dummy
 scoreboard objectives add gunsr.hole_shade dummy
+scoreboard objectives add gunsr.fire dummy
 
 # Fixed-point constants used by projectile movement and drag.
 scoreboard players set #500 gunsr.bullet 500
