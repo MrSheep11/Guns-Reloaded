@@ -11,7 +11,7 @@ tag @s add gunsr_bullet_shooter
 # Create the projectile at the shooter's end of the muzzle path instead of
 # directly at the configured forward offset. The checked muzzle-advance below
 # prevents a nearby wall from being skipped by the initial spawn.
-$execute anchored eyes positioned ^ ^ ^0 run summon minecraft:marker ~ ~-0.3 ~ {Tags:["new_bullet","bullet"],data:{blocks_per_tick:$(blocks_per_tick),max_distance:$(max_distance),lifetime_ticks:$(lifetime_ticks),straight_ticks:$(straight_ticks),momentum_retention:$(momentum_retention),drop_acceleration:$(drop_acceleration),damage:$(damage),fire_power:$(fire_power),spawn_distance:$(bullet_spawn_coord)}}
+$execute anchored eyes positioned ^ ^ ^$(bullet_spawn_coord) run summon minecraft:marker ~ ~-0.3 ~ {Tags:["new_bullet","bullet"],data:{blocks_per_tick:$(blocks_per_tick),max_distance:$(max_distance),lifetime_ticks:$(lifetime_ticks),straight_ticks:$(straight_ticks),momentum_retention:$(momentum_retention),drop_acceleration:$(drop_acceleration),damage:$(damage),fire_power:$(fire_power),spawn_distance:$(bullet_spawn_coord)}}
 data modify entity @e[type=minecraft:marker,tag=new_bullet,sort=nearest,limit=1] Rotation set from entity @s Rotation
 
 # Advance to the configured muzzle position in checked 0.05-block steps. The

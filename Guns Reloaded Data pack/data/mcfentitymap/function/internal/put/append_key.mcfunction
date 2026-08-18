@@ -1,0 +1,1 @@
+$data modify storage mcfentitymap:maps $(path)[{UUID: "$(UUID)"}].keys append value $(key)

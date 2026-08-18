@@ -1,0 +1,2 @@
+scoreboard players set #MCFEM_GLOBAL mcfem.suppress_errors 1
+function mcfentitymap:message/notice {message: "Errors will not be checked for. Please only enable this if errors are causing problems!", color: "yellow"}

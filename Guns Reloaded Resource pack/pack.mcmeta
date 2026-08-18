@@ -1,8 +1,8 @@
 {
-  "pack": {
-    "pack_format": 88,
-    "min_format": 88,
-    "max_format": 88,
-    "description": "First Person Hand Models - Minecraft 26.2 port"
-  }
+	"pack": {
+		"pack_format": 88,
+		"min_format": 88,
+		"max_format": 88,
+		"description": "First Person Hand Models - Minecraft 26.2 port"
+	}
 }

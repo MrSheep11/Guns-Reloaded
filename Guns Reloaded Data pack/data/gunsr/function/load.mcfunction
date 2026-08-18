@@ -26,3 +26,20 @@ scoreboard players set #1000 gunsr.bullet 1000
 # Remove bullet entities left over from previous projectile implementations.
 kill @e[type=minecraft:silverfish,tag=bullet]
 kill @e[type=minecraft:marker,tag=bullet]
+
+scoreboard objectives add gunsr.api.UUID_Selector dummy
+scoreboard players set @a gunsr.api.UUID_Selector 0
+scoreboard objectives add gunsr.api.UUID0 dummy
+scoreboard objectives add gunsr.api.UUID1 dummy
+scoreboard objectives add gunsr.api.UUID2 dummy
+scoreboard objectives add gunsr.api.UUID3 dummy
+scoreboard objectives add gunsr.api.UUID_Linked dummy
+
+scoreboard objectives add gunsr.holding_gun dummy
+
+scoreboard objectives add new_player_storage dummy
+
+execute as @a unless score @s gunsr.holding_gun matches 0..1 run scoreboard players set @s gunsr.holding_gun 0
+
+
+

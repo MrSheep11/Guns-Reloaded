@@ -1,0 +1,1 @@
+$data modify storage mcfentitymap:out $(output) append from storage mcfentitymap:maps $(path)[{UUID: "$(UUID)"}].values.$(current)
