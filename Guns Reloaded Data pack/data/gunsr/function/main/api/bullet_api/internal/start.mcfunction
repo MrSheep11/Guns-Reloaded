@@ -14,6 +14,11 @@ tag @s add gunsr_bullet_shooter
 $execute anchored eyes positioned ^ ^ ^$(bullet_spawn_coord) run summon minecraft:marker ~ ~-0.3 ~ {Tags:["new_bullet","bullet"],data:{blocks_per_tick:$(blocks_per_tick),max_distance:$(max_distance),lifetime_ticks:$(lifetime_ticks),straight_ticks:$(straight_ticks),momentum_retention:$(momentum_retention),drop_acceleration:$(drop_acceleration),damage:$(damage),fire_power:$(fire_power),spawn_distance:$(bullet_spawn_coord)}}
 data modify entity @e[type=minecraft:marker,tag=new_bullet,sort=nearest,limit=1] Rotation set from entity @s Rotation
 
+execute at @e[type=marker,tag=new_bullet] run particle smoke ~ ~0.1 ~ 0.1 0.1 0.1 0.01 1 force @a
+
+
+
+
 # Advance to the configured muzzle position in checked 0.05-block steps. The
 # normal range score is safe to use as scratch here because it is initialized
 # with max_distance after this close-range collision pass.

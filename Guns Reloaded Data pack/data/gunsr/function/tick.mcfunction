@@ -4,6 +4,5 @@ execute as @e[type=minecraft:block_display,tag=bullet_hole,scores={gunsr.hole_ag
 kill @e[type=minecraft:block_display,tag=bullet_hole,scores={gunsr.hole_age=200..}]
 
 
-execute as @a at @s run function gunsr:main/api/player_display/tick
 
 execute as @a if score @s new_player_storage matches 0 run function pdb:new_player
